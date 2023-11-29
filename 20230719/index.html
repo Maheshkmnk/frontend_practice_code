@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form>
+      <div class="container mid">
+        <div class="selectionContainer tablinks-container" style="padding: 5px">
+          <div class="headerpart" style="width: 58px">
+            <span
+              style="
+                width: 20px;
+                color: #5f5a6f;
+                font-size: xx-small;
+                font-weight: 500;
+              "
+              >SR#:<span
+                style="
+                  width: 38px;
+                  color: #393f7b;
+                  font-size: x-small;
+                  font-weight: 500;
+                  margin-left: 2px;
+                "
+                >996719 ,</span
+              ></span
+            >
+          </div>
+          <div
+            class="headerpart"
+            style="width: 88px; border-bottom: 2px solid #ffa500"
+          >
+            <i class="fa-solid fa-industry"></i>
+            <span
+              style="
+                width: 88px;
+                color: #3d437e;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+              >Amadeus ,</span
+            >
+          </div>
+
+          <div class="headerpart" style="width: 100px">
+            <i class="fa-solid fa-industry" style="color: #9fabc1"></i>
+            <i class="fa-solid fa-user" style="margin-left: -20px"></i>
+            <span
+              style="
+                width: 100px;
+                color: #3c427e;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              "
+              >James Lucas</span
+            >
+          </div>
+        </div>
+        <button class="iconbtn">
+          <i class="fa-solid fa-calendar"></i>
+        </button>
+        <button class="iconbtn">
+          <i class="fa-solid fa-phone-volume"></i>
+        </button>
+        <button class="iconbtn">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+        <button class="iconbtn">
+          <i class="fa-regular fa-message"></i>
+        </button>
+        <button class="iconbtn">
+          <i class="fa-solid fa-video"></i>
+        </button>
+        <button class="iconbtn">
+          <i class="fa-brands fa-whatsapp"></i>
+        </button>
+        <button class="iconbtn">
+          <i class="fa-regular fa-rectangle-list"></i>
+        </button>
+        <button class="iconbtn">
+          <i class="fa-solid fa-map-location"></i>
+        </button>
+        <button class="iconbtn"><i class="fa-solid fa-map"></i></button>
+      </div>
+      <div class="container collapscontainer" style="justify-content: flex-end">
+        <button class="collapse-button" onclick="toggleCollapse()">
+          Collapse All
+        </button>
+        <div id="collapse-content" class="container insidecollapscontainer">
+          <div
+            class="mid"
+            style="box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, 0)"
+          >
+            <div
+              class="tablinks-container"
+              style="display: flex; flex-wrap: wrap; flex-direction: row"
+            >
+              <div style="width: 40px" class="t2">
+                <span style="width: 40px">Adt</span>
+                <input
+                  type="number"
+                  style="width: 40px; font-size: x-small"
+                  placeholder="1"
+                />
+              </div>
+              <div class="t2" style="width: 40px">
+                <span style="width: 40px">Chd</span>
+                <input
+                  type="number"
+                  style="width: 40px; font-size: x-small"
+                  placeholder="0"
+                />
+              </div>
+              <div class="t2" style="width: 40px">
+                <span style="width: 40px">Inf</span>
+                <input
+                  type="number"
+                  style="width: 40px; font-size: x-small"
+                  placeholder="0"
+                />
+              </div>
+              <div class="person-icon">
+                <i
+                  class="fa-solid fa-user-plus fa-lg"
+                  style="color: #3a354f"
+                ></i>
+              </div>
+            </div>
+            <i
+              class="fa-solid fa-angle-up"
+              style="color: #2f8be6; font-size: small"
+            ></i>
+          </div>
+
+          <div class="mid">
+            <div class="selectionContainer tablinks-container">
+              <div style="width: 150px" class="t1">
+                <span style="width: 150px">Origin</span>
+                <div type="" class="bolt-icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <input
+                  class="inputFieldStyle"
+                  style="
+                    width: 150px;
+                    font-size: x-large;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                      'Trebuchet MS', sans-serif;
+                  "
+                  placeholder="Origin"
+                />
+              </div>
+              <div type="button" class="arrow-icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <div class="t1" style="width: 150px">
+                <span style="width: 150px">Destination</span>
+                <div type="" class="bolt-icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <input
+                  class="inputFieldStyle"
+                  style="
+                    width: 150px;
+                    font-size: x-large;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                      'Trebuchet MS', sans-serif;
+                  "
+                  placeholder="Destination"
+                />
+              </div>
+
+              <div class="t1" style="width: 90px">
+                <span style="width: 80px">Departure</span>
+                <div type="" class="bolt-icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <input
+                  class="inputFieldStyle"
+                  type="date"
+                  style="width: 80px"
+                />
+              </div>
+
+              <div class="t1" style="width: 60px">
+                <span style="width: 60px">Days</span>
+                <input
+                  class="inputFieldStyle"
+                  style="width: 60px"
+                  type="number"
+                  placeholder="0"
+                />
+              </div>
+
+              <div class="t1 dropdown" style="width: 60px">
+                <span style="width: 60px">MOT</span>
+
+                <select
+                  class="inputFieldStyle"
+                  name="cars"
+                  id="cars"
+                  style="width: 60px"
+                >
+                  <option value="volvo">Fl</option>
+                  <option value="saab">something</option>
+                  <option value="mercedes">something</option>
+                  <option value="audi">something</option>
+                </select>
+              </div>
+
+              <div class="t1" style="width: 60px">
+                <span style="width: 60px">Class</span>
+                <div type="" class="bolt-icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <select
+                  class="inputFieldStyle"
+                  name="cars"
+                  id="cars"
+                  style="width: 60px"
+                >
+                  <option value="volvo">Economy</option>
+                  <option value="saab">something</option>
+                  <option value="mercedes">something</option>
+                  <option value="audi">something</option>
+                </select>
+              </div>
+              <div class="t1" style="width: 80px">
+                <span style="width: 80px">Hotel Rating</span>
+                <select
+                  class="inputFieldStyle"
+                  name="cars"
+                  id="cars"
+                  style="width: 80px"
+                  type="number"
+                >
+                  <option value="volvo">5</option>
+                  <option value="saab">4</option>
+                  <option value="mercedes">3</option>
+                  <option value="audi">2</option>
+                  <option value="audi">1</option>
+                </select>
+              </div>
+              <div class="t1" style="width: 80px">
+                <span style="width: 80px">Property Type</span>
+                <select
+                  class="inputFieldStyle"
+                  name="cars"
+                  id="cars"
+                  style="width: 80px"
+                >
+                  <option value="volvo">Hotel</option>
+                  <option value="saab">Something</option>
+                  <option value="mercedes">Something</option>
+                  <option value="audi">Something</option>
+                </select>
+              </div>
+            </div>
+            <div type="button" class="delete-icon">
+              <i class="fa-solid fa-trash-can fa-beat-fade"></i>
+            </div>
+          </div>
+
+          <div
+            class="container tab mid"
+            style="box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2)"
+          >
+            <!-- Tab links -->
+            <div class="tablinks-container">
+              <button class="tablinks" onclick="openCity(event, 'Hotel')">
+                Hotel/Rooms
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Activities')">
+                Activities
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Addons')">
+                Addons/Inclusions
+              </button>
+
+              <button class="tablinks" onclick="openCity(event, 'lpo')">
+                LPO Details
+              </button>
+
+              <button class="tablinks" onclick="openCity(event, 'flight')">
+                Flight Extra
+              </button>
+
+              <button class="tablinks" onclick="openCity(event, 'Visa')">
+                Visa
+              </button>
+
+              <button class="tablinks" onclick="openCity(event, 'insurance')">
+                Insurance
+              </button>
+
+              <button class="tablinks" onclick="openCity(event, 'exclusions')">
+                Exclusions
+              </button>
+
+              <button class="tablinks" onclick="openCity(event, 'forex')">
+                Forex
+              </button>
+
+              <button class="tablinks" onclick="openCity(event, 'carRental')">
+                Car Rental
+              </button>
+            </div>
+            <button
+              class="btn add-destination-btn"
+              style="
+                background-color: #2f8be6;
+                color: rgb(240, 243, 246);
+                width: 10%;
+                align-content: center;
+              "
+            >
+              Add Destination
+            </button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="Hotel" class="tabcontent">
+            <div class="insideTabContentAlign">
+              <div class="">
+                <div class="insideTabContentAlign1">
+                  <input type="radio" style="margin-right: 3px" />
+                  <span style="margin-right: 10px"> Different Hotel</span>
+                  <input type="radio" style="margin-right: 3px" />
+                  <span style="margin-right: 10px"> Specific Hotel</span>
+                </div>
+              </div>
+              <div class="insideTabContentAlign2">
+                <span class="label">Rooms</span>
+                <input type="number" style="width: 40px; height: 20px" />
+              </div>
+            </div>
+          </div>
+
+          <div id="Activities" class="tabcontent">
+            <h3>Activities</h3>
+            <p>Paris is the capital of France.</p>
+          </div>
+          <div id="Addons" class="tabcontent">
+            <h3>Addons</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="lpo" class="tabcontent">
+            <h3>LPO Details</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="flight" class="tabcontent">
+            <h3>Flight Extra</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="Visa" class="tabcontent">
+            <h3>Visa</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="insurance" class="tabcontent">
+            <h3>Insurance</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="exclusions" class="tabcontent">
+            <h3>Exclusions</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="forex" class="tabcontent">
+            <h3>Forex</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+          <div id="carRental" class="tabcontent">
+            <h3>Car Rental</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+        </div>
+        <div class="container savebtn tab mid">
+          <button
+            type="button"
+            class="btn add-destination-btn"
+            style="
+              background-color: #2f8be6;
+              color: rgb(240, 243, 246);
+              width: 7%;
+              align-content: center;
+            "
+          >
+            <i class="fa-regular fa-bookmark"></i>
+            Save
+          </button>
+        </div>
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

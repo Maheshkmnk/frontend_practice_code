@@ -1,0 +1,26 @@
+
+
+
+a:link{
+    background-color: rgb(9, 248, 9) !important;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    box-decoration-break: none;
+}
+
+/* 
+
+a:active {
+    color: green;
+} */
+/* a:hover {
+    
+    color: blue;
+} */
+
+
+
+

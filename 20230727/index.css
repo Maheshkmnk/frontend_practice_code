@@ -1,0 +1,49 @@
+body{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ordered, #unordered, .orderedlist, .unorderedlist {
+    /* list-style-type: none; */
+    /* list-style-type: circle; */
+    /* list-style-type: upper-alpha; */
+    border: 1px solid black;
+  border-radius: 5px;
+   list-style-position: outside;  
+   /* list-style-image: url('https://i.ibb.co/DChmHm6/photo-1541963463532-d68292c34b19-2.jpg') ; */
+}
+
+blockquote::before {
+  quotes: open-quote;
+}
+
+blockquote::after {
+  quotes: close-quote;
+}
+
+.tablediv{
+  /* display: flex;
+  justify-content: center; */
+  
+  text-align: center;
+}
+
+table{
+  border-collapse: collapse ;
+}
+
+.table, .cells{
+  margin: auto;
+border: 1px solid black;
+}
+
+th{
+  text-transform: uppercase;
+}
+tr:hover {
+  background-color: #ddd; /* Changes background on hover */
+}
+td.highlight{
+    background-color: yellow;
+}

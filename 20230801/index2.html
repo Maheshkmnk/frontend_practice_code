@@ -1,0 +1,219 @@
+<section id="basic-hidden-label-form-layouts">
+  <div class="row match-height">
+    <!-- Basic Form starts -->
+    <div class="col-lg-12 col-12">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body">
+            <form>
+              <div class="border">
+                <div class="header-div card m-0">
+                  <h6 class="card-title bg-info text-white px-3 py-2 mb-2">
+                    Fill Details
+                  </h6>
+
+                  <div class="form-row px-2">
+                    <div class="col-md-12 col-12">
+                      <div class="form-group mb-1">
+                        <label
+                          for="person-name"
+                          class="text-transform-none-class"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          id="person-name"
+                          class="form-control"
+                          name="name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-row px-2">
+                    <div class="col-md-12 col-12">
+                      <div class="form-group mb-1">
+                        <label
+                          for="basic-form-9"
+                          class="text-transform-none-class"
+                          >Description</label
+                        >
+                        <textarea
+                          id="basic-form-9"
+                          rows="2"
+                          class="form-control"
+                          name="comment"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-row px-2">
+                    <div class="col-md-3 col-12">
+                      <div class="form-group mb-1">
+                        <label for="days" class="text-transform-none-class"
+                          >Days</label
+                        >
+                        <input
+                          type="number"
+                          id="days"
+                          class="form-control"
+                          name="days"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-12">
+                      <div class="form-group mb-2">
+                        <label
+                          for="basic-form-6"
+                          class="text-transform-none-class"
+                          >Category</label
+                        >
+                        <select
+                          id="basic-form-6"
+                          name="interested"
+                          class="form-control"
+                        >
+                          <option value="none" selected disabled>
+                            Category
+                          </option>
+                          <option value="design">Design</option>
+                          <option value="development">Development</option>
+                          <option value="illustration">Illustration</option>
+                          <option value="branding">Branding</option>
+                          <option value="video">Video</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-12">
+                      <div class="form-group mb-2">
+                        <label
+                          for="person-name"
+                          class="text-transform-none-class"
+                          >Type</label
+                        >
+                        <select
+                          id="basic-form-6"
+                          name="interested"
+                          class="form-control"
+                        >
+                          <option value="none" selected disabled>Type</option>
+                          <option value="design">First Class</option>
+                          <option value="development">Bussiness Class</option>
+                          <option value="illustration">Economy Class</option>
+                          <option value="branding">
+                            Premium Economy Class
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-12">
+                      <div class="form-group mb-2">
+                        <label
+                          for="person-name"
+                          class="text-transform-none-class"
+                          >Status</label
+                        >
+                        <select
+                          id="basic-form-6"
+                          name="interested"
+                          class="form-control"
+                        >
+                          <option value="none" selected disabled>Status</option>
+                          <option value="design">Active</option>
+                          <option value="illustration">Inactive</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row px-2">
+                    <div class="col-md-6 col-12">
+                      <div class="form-group mb-1">
+                        <label
+                          for="start-date"
+                          class="text-transform-none-class"
+                          >From</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          placeholder="yyyy-mm-dd"
+                          name="dp"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <div class="form-group mb-1">
+                        <label for="end-date" class="text-transform-none-class"
+                          >To</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control"
+                          placeholder="yyyy-mm-dd"
+                          name="end-date"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 col-12">
+                  <div class="form-group mb-1">
+                    <fieldset>
+                      <label>Simple Input with two items</label>
+                      <div class="form-group">
+                        <tag-input
+                          [(ngModel)]="items"
+                          (onSelect)="onSelect($event)"
+                          [modelAsStrings]="true"
+                        >
+                        </tag-input>
+                        <p class="text-muted small my-1">
+                          By default close char is <code>x</code>.
+                        </p>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12 col-12">
+                  <div class="form-group mb-1">
+                    <ng-select
+                      [items]="cities"
+                      bindLabel="name"
+                      placeholder="Select city"
+                      [(ngModel)]="selectedCity"
+                    >
+                    </ng-select>
+                    <p class="text-italic font-small-2 mt-1">
+                      Selected city: {{ selectedCity | json }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+              <div class="text-right">
+                <button type="button" class="btn btn-info mr-2 ml-auto">
+                  <i class="ft-check-square mr-1"></i>Submit
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                  <i class="ft-x mr-1"></i>Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Basic Form ends -->
+  </div>
+</section>

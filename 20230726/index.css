@@ -1,0 +1,34 @@
+*{
+    margin:3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    margin: 5px;
+    border: 2px solid rgb(33, 178, 222);
+    box-shadow: 0 0 25px 7px grey;
+    border-radius: 10px;
+
+}
+
+.checkbox{
+    margin: 5px;
+    border: 2px solid rgb(33, 222, 33);
+    box-shadow: 0 0 25px 7px grey;
+    border-radius: 10px;
+}
+
+.lov{
+    margin: 5px;
+    border: 2px solid rgb(184, 222, 33);
+    box-shadow: 0 0 25px 7px grey;
+    border-radius: 6px;
+}
+
+.radiobutton{
+    margin: 5px;
+    border: 2px solid rgb(222, 124, 33);
+    box-shadow: 0 0 25px 7px grey;
+    border-radius: 10px;
+}

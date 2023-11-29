@@ -1,0 +1,102 @@
+.t1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+    
+    margin-left: 2px;
+  }
+  
+  .tablinks-container {
+    flex: 1; /* Take up remaining space */
+  }
+
+  .mid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px;
+    padding: 5px; /* Add padding for spacing */
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+  
+  .selectionContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+  }
+  
+  span {
+    font-size: 12px;
+    
+  }
+  
+  .t1 input,
+  select {    
+    height: 50px;
+    font-size: small;
+  }
+  
+  option{
+    font-size: small;
+  }
+  
+
+  .inputFieldStyle {
+    border-left:none;
+    border-top: none;
+    border-bottom: none;
+    border-right-width: 1px;
+  }
+
+  /* .spanlabel{
+    border-left:none;
+    border-top: none;
+    border-bottom: none;
+    border-right-width: 1px;
+  } */
+  
+  input:focus, select:focus {
+    outline: none;
+  }
+  
+  .delete-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+  }
+  
+  .bolt-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: -10px;
+    color: #69abed;
+    font-size: x-small;
+  }
+  
+  .arrow-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: -7px;
+    margin-top: 13px;
+    margin-right: 10px;
+    color: #69abed;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    justify-content: last baseline; 
+  }
+  
+  
+
+  
+
+  
+  
